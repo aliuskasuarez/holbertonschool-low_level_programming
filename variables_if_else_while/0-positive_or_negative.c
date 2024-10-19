@@ -1,19 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
+
 /**
- * main - asasaradap 
+ * main - generates a random number and checks its last digit
  *
- *  Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
-int main()void)
-{
-	int main () {
-	srand(time(0));
-	int n = rand();
-	int last_digit = n % 10; 
-	n = rand() - RAND_MAX / 2;
-		return (0);
+int main(void) {
+    srand(time(0));
+    int n = rand();
+    int last_digit = n % 10;
+    return 0;
 }
