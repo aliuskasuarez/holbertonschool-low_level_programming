@@ -3,13 +3,16 @@
 #include <time.h>
 
 /**
- * main - generates a random number and checks its last digit
+ * main - checks if a random number is positive, negative, or zero
  *
  * Return: Always 0 (Success)
  */
 int main(void) {
     srand(time(0));
-    int n = rand();
-    int last_digit = n % 10;
+    int n;
+    int last_digit;
+    n = rand();
+    last_digit = n % 10;
+    printf("Random number: %d, Last digit: %d\n", n, last_digit);
     return 0;
 }
