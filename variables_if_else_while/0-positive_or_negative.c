@@ -6,13 +6,14 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void) {
-    int n;
-    int last_digit;
-    srand(time(0));
-    n = rand();
-    last_digit = n % 10;
-    printf("Last digit of %d is %d\n", n, last_digit);
-    return 0;
+int main(void)
+{
+int n;
+int last_digit;
+srand(time(0));
+n = rand();
+last_digit = n % 10;
+printf("Last digit of %d is %d\n", n, last_digit);
+return (0);
 }
 
