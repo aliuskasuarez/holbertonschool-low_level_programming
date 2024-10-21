@@ -1,18 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * main - generates a random number and checks its last digit
+ * main - la descripcion de main
  *
- * Return: Always 0 (Success)
+ * Return: Siempre 0 (Exitoso)
  */
 int main(void)
 {
-int n;
-int last_digit;
-srand(time(0));
-n = rand();
-last_digit = n % 10;
-printf("Last digit of %d is %d\n", n, last_digit);
-return (0);
+    int n;
+    srand(time(0));
+    n = rand() % 201 - 100;
+    printf("The number is %d\n", n);
+    if (n > 0)
+    {
+        printf("%d is positive\n", n);
+    }
+    else if (n < 0)
+    {
+        printf("%d is negative\n", n);
+    }
+    else
+    {
+        printf("%d is zero\n", n);
+    }
+
+    return (0);
 }
