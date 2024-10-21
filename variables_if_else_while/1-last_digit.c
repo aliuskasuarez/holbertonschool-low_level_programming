@@ -4,7 +4,8 @@
 /**
  * main - dice si un número random es positivo o negativo
  *
- * return: obvio, siempre es 0 (Success)
+ * Return: siempre es 0 (Success)
+ * Descripcion del valor de retorno el valor 0 indica que el programa finalizo ok
  */
 int main(void)
 {
