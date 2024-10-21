@@ -12,9 +12,7 @@ int main(void)
     int n;
 
     srand(time(0));
-    n = rand() % 201 - 100;
-
-    printf("The number is %d\n", n);
+    n = rand() % RAND_MAX / 2;
     
     if (n > 0)
     {
