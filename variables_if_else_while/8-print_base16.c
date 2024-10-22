@@ -1,8 +1,9 @@
 #include <unistd.h>
 /**
- * main - prints hexagonal numbers of base 16
+ * putchar - writes a character to the standard output
+ * @c: the character to print (ASCII value)
  *
- * Return: Always 0 (Success)
+ * Return: On success, 1 is returned. On error, -1 is returned.
  */
 int putchar(int c);
 /**
