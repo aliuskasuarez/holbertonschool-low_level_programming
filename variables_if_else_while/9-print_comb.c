@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
-* main i will be using putchar to print all posible combinations
-*
-* Return 0 success
-*/
+ * main - Printea digitos simples de  numeros from 0 to 9
+ *
+ *
+ * Return: 0 on success.
+ */
 int main(void)
 {
 int i;
