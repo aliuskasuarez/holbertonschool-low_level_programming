@@ -2,6 +2,7 @@
 /**
  * main - prints hexagonal numbers of base 16
  *
+ * putchar - writes a character to the standard output
  * Return: Always 0 (Success)
  */
 int putchar(int c);
