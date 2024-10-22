@@ -1,14 +1,14 @@
 #include <unistd.h>
 #include <stdio.h>
-/*
- * main i will be using putchar to print all posible combinations
- *
- * return 0 success 
- */ 
-int main()
+/**
+* main i will be using putchar to print all posible combinations
+*
+*Return 0 success
+*/
+int main(void)
 {
-int i, j; 
-for (i = 0; i<= 9; i++) 
+int i, j;
+for (i = 0; i<= 9; i++)
 {
 for (j = i + 1; j<= 9; j++) 
 {
