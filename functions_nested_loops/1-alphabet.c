@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * main print the alphabet in lowercase
+ *
+ * Return always 0 success
+ *
+ */
 void print_alphabet(void)
 {
 char letter;
