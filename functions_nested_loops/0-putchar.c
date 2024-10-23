@@ -4,7 +4,7 @@
  *
  * Return: 0 on success.
  */
-int main()
+int main(void)
 {
 const char *str = "_putchar";
 while (*str) 
