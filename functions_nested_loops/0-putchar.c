@@ -6,7 +6,7 @@
  */
 int main()
 {
-const char *str = "Hola, mundo!";
+const char *str = "_putchar";
 while (*str) 
 {
 putchar(*str);
