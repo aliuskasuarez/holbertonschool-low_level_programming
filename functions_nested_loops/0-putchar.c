@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - Prints "_putchar" seguido de una nueva linea
  *
@@ -6,12 +7,7 @@
  */
 int main(void)
 {
-const char *str = "_putchar";
-while (*str) 
-{
-putchar(*str);
-str++;
-}
-putchar('\n');
-return (0);
+    const char *str = "_putchar\n";
+    write(1, str, 9);
+    return 0;
 }
