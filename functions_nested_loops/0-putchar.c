@@ -1,11 +1,17 @@
 #include <stdio.h>
 /**
- * main - Prints "_putchar" followed by a new line.
+ * main - Prints "_putchar" seguido de una nueva linea
  *
  * Return: 0 on success.
  */
-int main(void)
+int main()
 {
-    printf("_putchar\n");
-    return (0);
+const char *str = "Hola, mundo!";
+while (*str) 
+{
+putchar(*str);
+str++;
+}
+putchar('\n');
+return (0);
 }
