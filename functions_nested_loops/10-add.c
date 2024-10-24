@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * int add - explain this
+ * add - aneade dos integradores
+ * @a: primer integrador
+ * @b: segundo integrador
  *
- * return always success
- *
+ * Return: la suma de a + b
  */
 int add(int a, int b)
 {
