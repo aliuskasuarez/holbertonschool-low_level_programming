@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * int _islower - islower
+ * _isalpha - chequea si un caracter es alfabetico
+ * @c: el caracter a chequear como un int 
  *
- * Description:  a function islower
- *
+ * Return: 1 si es una letra dosent matter mayuscula o minuscula y 0 
  */
 int _isalpha(int c)
 {
