@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - alphabet in lowercase 10 times
+ * int _islower - islower
  *
- * Description:This function prints 10 times the alphabet in lowecase
+ * Description:  a function islower
  *
  */
 int _islower(int c)
 {
-return (c >= 'a' && c <= 'z') ? (1) : (0);
+return (c >= 'a') && (c <= 'z') ? (1) : (0);
 }
