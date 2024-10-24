@@ -1,10 +1,10 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * void jack_bauer - 24 horas
- * int hour, minute - horario minutos
+ * jack_bauer - printea cada minuto del dia en hh:mm format
  *
- *
+ * cada horario del dia en sus 24 horas
+ * 
  */
 void jack_bauer(void)
 {
