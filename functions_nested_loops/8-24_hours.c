@@ -1,10 +1,10 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * _abs - imprime el valor absoluto
- * @n: el integrador
+ * void jack_bauer - 24 horas
+ * int hour, minute - horario minutos
  *
- * Return: el valor absoluto de n
+ *
  */
 void jack_bauer(void)
 {
