@@ -13,11 +13,10 @@ void print_comb3(void) {
                 _putchar('0' + i);
                 _putchar('0' + j);
                 _putchar('0' + k);
-                if (i == 7 && j == 8 && k == 9) {
-                    break;
+                if (i != 7 || j != 8 || k != 9) {
+                    _putchar(',');
+                    _putchar(' ');
                 }
-                _putchar(',');
-                _putchar(' ');
             }
         }
     }
@@ -28,3 +27,4 @@ int main(void) {
     print_comb3();
     return 0;
 }
+
