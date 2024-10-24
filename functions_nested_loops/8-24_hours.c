@@ -4,7 +4,7 @@
  * jack_bauer - printea cada minuto del dia en hh:mm format
  *
  * cada horario del dia en sus 24 horas
- * 
+ *
  */
 void jack_bauer(void)
 {
