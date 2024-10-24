@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * int _islower - islower
+ * _islower - es menor que
+ * @c: @
  *
- * Description:  a function islower
- *
+ * Return: 1 si es return 0 de otra manera
  */
 int _islower(int c)
 {
