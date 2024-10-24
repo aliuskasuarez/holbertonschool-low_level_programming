@@ -1,32 +1,33 @@
 #include <stdio.h>
+
 /**
- * main - fibonacci sin exeder los 4 millones
+ * main - imprime fiboooo 
  *
- * Description: fibonacci starting 1 to 4000000
+ * Description: este programa genera hasta 400000 sin exeder eso el fiboo
  *
  * Return: siempre retorna 0 el exitoso
  */
 int main(void)
 {
-unsigned long long a = 1, b = 2;
-int count;
-for (count = 1; count <= 98; count++)
+unsigned long fib1 = 1, fib2 = 2;
+unsigned long next_fib;
+unsigned long sum = 0;
+printf("%lu, %lu", fib1, fib2);
+sum += fib2;
+while (fib2 <= 4000000)
 {
-if (count == 1)
+next_fib = fib1 + fib2;
+if (next_fib > 4000000)
 {
-printf("%llu", a);
+break;
 }
-else if (count == 2) {
-printf(", %llu", b);
+printf(", %lu", next_fib);
+if (next_fib % 2 == 0) {
+sum += next_fib;
 }
-else
-{
-unsigned long long next = a + b;
-printf(", %llu", next);
-a = b;
-b = next;
+fib1 = fib2;
+fib2 = next_fib;
 }
-}
-printf("\n");
+printf("\nSum of even Fibonacci numbers: %lu\n", sum);
 return (0);
 }
