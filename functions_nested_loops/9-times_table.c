@@ -11,7 +11,6 @@ int _putchar(char c);
  *
  * Return: void
  */
-void tim
 void times_table(void)
 {
 int i, j, product;
