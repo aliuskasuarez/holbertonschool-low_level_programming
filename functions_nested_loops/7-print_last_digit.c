@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _putchar - imprime
- * int print_last_digit - imprime ultimo digito
+ * print_last_digit - imprime el ultimo digito de un numero
+ * @c: el integrador del ultimo digito a imprimirse
  *
- * Return: el valor absoluto de n
+ * Return: devuelve el ultimo digito de un numero
  */
 int _putchar(char c);
 int print_last_digit(int number)
