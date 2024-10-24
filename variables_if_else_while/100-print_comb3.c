@@ -1,33 +1,34 @@
 #include <stdio.h>
 void _putchar(char c);
-void _putchar(char c) {
+void _putchar(char c)
+{
 putchar(c);
 }
-void print_times_table(void)
+void print_comb3(void)
 {
-   int i, j, product;
-
-    for (i = 0; i < 10; i++) {
-        for (j = 0; j < 10; j++) {
-            product = i * j;
-if (product < 10) {
-_putchar('0' + product);
+int i, j;
+for (i = 0; i < 9; i++)
+{
+for (j = i + 1; j < 10; j++)
+{
+if (i == 0 && j == 1)
+{
+_putchar('0' + i);
+_putchar('0' + j);
 }
-else {
-_putchar('0' + product / 10);
-_putchar('0' + product % 10);
-}
-if (j < 9) {
+else
+{
 _putchar(',');
 _putchar(' ');
+_putchar('0' + i);
+_putchar('0' + j);
+}
 }
 }
 _putchar('\n');
 }
-}
-int main(void) {
-    _putchar('H');
-    _putchar('i');
-    _putchar('\n');
-    return 0;
+int main(void)
+{
+print_comb3();
+return (0);
 }
