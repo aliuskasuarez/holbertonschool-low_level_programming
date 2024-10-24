@@ -1,31 +1,34 @@
-#include <unistd.h>
 #include "main.h"
 /**
- * times_table - imprime la tabla del 9
+ * times_table - Prints the 9 times table, starting from 0.
  *
- * esta funcion imprime la tabla del 9 el codigo es echo por mi mauricio
+ * This function prints the 9 times multiplication table,
+ * from 0 to 9, with each value printed on a new line.
  *
  * Return: void
  */
-int _putchar(char c);
 void times_table(void)
 {
-int i, result;
+int i, j, result;
 for (i = 0; i <= 9; i++)
 {
-result = i * 9;
+for (j = 0; j <= 9; j++)
+{
+result = i * j;
 if (result < 10)
 {
-_putchar(result + '0');
+_putchar('0' + result);
 }
 else
 {
-_putchar((result / 10) + '0');
-_putchar((result % 10) + '0');
+_putchar('0' + (result / 10));
+_putchar('0' + (result % 10));
 }
-if (i < 9)
+if (j < 9)
 {
+_putchar(',');
+_putchar(' ');
+}
+}
 _putchar('\n');
-}
-}
 }
