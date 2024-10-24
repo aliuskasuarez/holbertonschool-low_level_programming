@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * times_table - Prints the 9 times table, starting from 0.
+ * times_table - imprime la tabla del 9
  *
- * This function prints the 9 times multiplication table,
- * from 0 to 9, with each value printed on a new line.
+ * tala del  9
+ * from 0 to 9
  *
  * Return: void
  */
@@ -18,15 +18,19 @@ result = i * j;
 if (result < 10)
 {
 _putchar('0' + result);
+_putchar(' ');
+_putchar(' ');
 }
 else
 {
 _putchar('0' + (result / 10));
 _putchar('0' + (result % 10));
+_putchar(' ');
 }
 if (j < 9)
 {
 _putchar(',');
+_putchar(' ');
 _putchar(' ');
 }
 }
