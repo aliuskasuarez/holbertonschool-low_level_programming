@@ -1,5 +1,17 @@
 #include "main.h"
+/**
+ * _putchar - Outputs a character
+ * @c: The character to output
+ *
+ * Return: On success 1, -1 on error
+ */
 int _putchar(char c);
+/**
+ * times_table - Prints the 9 times table
+ *
+ * Return: void
+ */
+void tim
 void times_table(void)
 {
 int i, j, product;
