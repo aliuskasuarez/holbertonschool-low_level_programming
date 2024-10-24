@@ -8,22 +8,21 @@
  */
 int main(void)
 {
-int a = 1, b = 2;
+unsigned long long a = 1, b = 2;
 int count;
 for (count = 1; count <= 98; count++)
 {
 if (count == 1)
 {
-printf("%d", a);
+printf("%llu", a);
 }
-else if (count == 2)
-{
-printf(", %d", b);
+else if (count == 2) {
+printf(", %llu", b);
 }
 else
 {
-int next = a + b;
-printf(", %d", next);
+unsigned long long next = a + b;
+printf(", %llu", next);
 a = b;
 b = next;
 }
