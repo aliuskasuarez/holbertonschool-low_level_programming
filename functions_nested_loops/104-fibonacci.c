@@ -1,12 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - Printea los 98 primeros fibo
- *
- * Description: generamos los 98 primeros fibo
- *
- * Return: siempre da 0 exitoso
- */
 int main(void)
 {
     unsigned long fib1 = 1, fib2 = 2;
@@ -14,17 +7,11 @@ int main(void)
     unsigned long sum = 0;
     int i;
 
-    printf("%lu", fib1);
-    sum += fib1;
+    printf("%lu, %lu", fib1, fib2);
+    sum += fib2;
 
-    for (i = 1; i < 98; i++)
+    for (i = 2; i < 98; i++)
     {
-        if (i == 1) {
-            printf(", %lu", fib2);
-            sum += fib2;
-            continue;
-        }
-
         next_fib = fib1 + fib2;
         printf(", %lu", next_fib);
 
