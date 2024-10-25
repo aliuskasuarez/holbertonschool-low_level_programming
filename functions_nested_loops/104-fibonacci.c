@@ -4,14 +4,12 @@
 #define FIB_COUNT 98
 
 void add_fibonacci(char result[][MAX_DIGITS]) {
+    int j, i, carry;
+
     result[0][0] = '1';
     result[0][1] = '\0';
     result[1][0] = '2';
     result[1][1] = '\0';
-
-    int j;
-    int carry;
-    int i;
 
     for (j = 2; j < FIB_COUNT; j++) {
         carry = 0;
