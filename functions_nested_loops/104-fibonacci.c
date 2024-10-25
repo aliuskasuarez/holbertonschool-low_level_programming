@@ -8,7 +8,7 @@ int main(void)
     int i;
 
     printf("%lu, %lu", fib1, fib2);
-    sum += fib2;
+    sum += fib1 + fib2;
 
     for (i = 2; i < 98; i++)
     {
@@ -23,6 +23,6 @@ int main(void)
         fib2 = next_fib;
     }
 
-    printf("\nSum of even Fibonacci numbers: %lu\n", sum);
+    printf("\nsuma of even Fibonacci numbers: %lu\n", sum);
     return (0);
 }
