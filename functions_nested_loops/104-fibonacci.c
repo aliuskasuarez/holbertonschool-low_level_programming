@@ -9,12 +9,15 @@ void add_fibonacci(char result[][MAX_DIGITS]) {
     result[1][0] = '2';
     result[1][1] = '\0';
 
-    int i, j, carry;
+    int j;
+    int carry;
+    int i;
 
     for (j = 2; j < FIB_COUNT; j++) {
         carry = 0;
         for (i = 0; result[j - 1][i] != '\0' || result[j - 2][i] != '\0' || carry; i++) {
             int sum = carry;
+
             if (result[j - 1][i] != '\0') {
                 sum += result[j - 1][i] - '0';
             }
@@ -23,7 +26,7 @@ void add_fibonacci(char result[][MAX_DIGITS]) {
             }
 
             result[j][i] = (sum % 10) + '0';
-            carry = sum / 10; 
+            carry = sum / 10;
         }
         result[j][i] = '\0';
     }
