@@ -23,6 +23,6 @@ int main(void)
         fib2 = next_fib;
     }
 
-    printf("\nsuma of even Fibonacci numbers: %lu\n", sum);
+    printf("\nsuma de los fibonacci numbers: %lu\n", sum);
     return (0);
 }
