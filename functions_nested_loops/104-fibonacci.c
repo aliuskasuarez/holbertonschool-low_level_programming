@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Prints the first 98 Fibonacci numbers and their sum
+ * main - Printea los 98 primeros fibo
  *
- * Description: This program generates the first 98 Fibonacci numbers
- *              and calculates the sum of the even ones.
+ * Description: generamos los 98 primeros fibo
  *
- * Return: Always returns 0 on success
+ * Return: siempre da 0 exitoso
  */
 int main(void)
 {
     unsigned long fib1 = 1, fib2 = 2;
     unsigned long next_fib;
     unsigned long sum = 0;
+    int i;
 
     printf("%lu", fib1);
     sum += fib1;
 
-    for (int i = 1; i < 98; i++)
+    for (i = 1; i < 98; i++)
     {
         if (i == 1) {
             printf(", %lu", fib2);
