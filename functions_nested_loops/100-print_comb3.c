@@ -1,3 +1,4 @@
+#include "main.h"
 void print_times_table(void) {
     int i, j, product;
 
