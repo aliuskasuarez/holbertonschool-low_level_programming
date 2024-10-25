@@ -2,19 +2,14 @@
 
 int main(void)
 {
-    unsigned long fib1;
-    unsigned long fib2;
+    unsigned long fib1 = 1, fib2 = 2;
     unsigned long next_fib;
-    unsigned long sum;
+    unsigned long sum = fib1 + fib2;
     int i;
-
-    fib1 = 1;
-    fib2 = 2;
-    sum = fib1 + fib2;
 
     printf("%lu, %lu", fib1, fib2);
 
-    for (i = 2; i < 98; i++)
+    for (i = 3; i <= 98; i++)
     {
         next_fib = fib1 + fib2;
         printf(", %lu", next_fib);
